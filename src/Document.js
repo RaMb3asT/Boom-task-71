@@ -13,9 +13,9 @@ export default function Document(props) {
     }
 
     return (
-        <div style={{overflowY: "scroll", height: "300px"}} onScroll={handleScroll}>
+        <div>
             <h2 className="title">{title}</h2>
-            <div className="content">{content}</div>
+            <div style={{overflowY: "scroll", height: "300px"}} className="content" onScroll={handleScroll}>{content}</div>
             <button disabled={enabled}>I Agree</button>
         </div>
     );
